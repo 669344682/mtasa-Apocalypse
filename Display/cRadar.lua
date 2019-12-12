@@ -1,0 +1,3 @@
+--((Project: LakeZ - Zombie Apocalypse))
+--((Developers: DorteY))
+--((File: Display/cRadar.lua))
