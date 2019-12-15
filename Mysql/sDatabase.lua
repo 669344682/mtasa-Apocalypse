@@ -18,7 +18,6 @@ function openMysqlConnection()
 	else
 		print("[MYSQL] Failed to connect to MySQL database!")
 		stopResource(getThisResource())
-		return nil
 	end
 end
 addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),openMysqlConnection)
@@ -27,7 +26,6 @@ function closeMysqlConnection()
 	if(handler)then
 		destroyElement(handler)
 		print("[MYSQL] Closed connection to MySQL database!")
-		return nil
 	end
 end
 addEventHandler("onResourceStop",resourceRoot,closeMysqlConnection)
